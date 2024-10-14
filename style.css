@@ -12,13 +12,15 @@ body {
   font-family: Space Grotesk;
 }
 header,
-nav {
+nav,
+footer {
   background-color: rgb(255, 200, 0);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-nav img {
+nav img,
+footer img {
   width: 7rem;
 }
 header ul {
@@ -74,4 +76,107 @@ main {
 
 .card-body {
   background-color: rgb(255, 200, 0);
+}
+.videox-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videox-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.con ul li::before {
+  content: "\2022";
+  color: rgb(255, 200, 0);
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.z {
+  width: 35rem;
+  height: 35rem;
+}
+/* Test */
+.content-above,
+.content-below {
+  height: 30vh;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.video-sec {
+  position: relative;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.video-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+p {
+  font-size: 1.2em;
+}
+.R {
+  background-color: rgba(35, 161, 54, 0.507);
+  border-radius: 30px;
+}
+/* Test */
+.get {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: no-repeat fixed center;
+  background-size: cover;
+  height: 60vh;
+  background-image: url(img/trtr.jpg);
+  background-color: rgba(35, 161, 0, 0.5);
+  background-blend-mode: multiply;
+}
+footer {
+  height: 40vh;
+  padding: 2rem;
+}
+footer div {
+  flex: 1;
+  text-align: center;
+  gap: 20px;
 }
