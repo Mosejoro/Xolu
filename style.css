@@ -342,7 +342,7 @@ footer div {
   border-color: rgb(255, 200, 0);
 }
 .contact-info {
-  background-color: rgb(35, 161, 54);
+  background-color: rgba(35, 161, 54, 0.37);
   color: white;
   border-radius: 15px 0 0 15px;
 }
