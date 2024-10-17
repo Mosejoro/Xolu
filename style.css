@@ -362,6 +362,9 @@ footer div {
   overflow: hidden;
   transition: transform 0.3s;
 }
+.blog-card a {
+  text-decoration: rgb(35, 161, 54) underline;
+}
 .blog-card:hover {
   transform: translateY(-5px);
 }
