@@ -172,7 +172,6 @@ p {
   background-blend-mode: multiply;
 }
 footer {
-  height: 40vh;
   padding: 2rem;
 }
 footer div {
@@ -356,3 +355,30 @@ footer div {
   }
 }
 /* FOrm */
+/* Blog */
+.blog-card {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+.blog-image {
+  height: 200px;
+  object-fit: cover;
+}
+.blog-title {
+  color: rgb(35, 161, 54);
+}
+.btn-primary {
+  background-color: rgb(35, 161, 54);
+  border-color: rgb(35, 161, 54);
+}
+.btn-primary:hover {
+  background-color: rgb(255, 200, 0);
+  border-color: rgb(35, 161, 54);
+  color: #000;
+}
+/* Blog */
