@@ -320,3 +320,39 @@ footer div {
   }
 }
 /* Partners */
+/* FOrm */
+.T {
+  padding: 2rem;
+}
+.contact-form {
+  background-color: #f0f0f010;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.form-control:focus {
+  border-color: rgb(35, 161, 54);
+  box-shadow: 0 0 0 0.2rem rgba(35, 161, 54, 0.25);
+}
+.btn-primary {
+  background-color: rgb(35, 161, 54);
+  border-color: rgb(35, 161, 54);
+}
+.btn-primary:hover {
+  background-color: rgb(255, 200, 0);
+  border-color: rgb(255, 200, 0);
+}
+.contact-info {
+  background-color: rgb(35, 161, 54);
+  color: white;
+  border-radius: 15px 0 0 15px;
+}
+.contact-info i {
+  font-size: 2rem;
+  color: rgb(255, 200, 0);
+}
+@media (max-width: 767.98px) {
+  .contact-info {
+    border-radius: 15px 15px 0 0;
+  }
+}
+/* FOrm */
