@@ -45,15 +45,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto text-center">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Who We Are</a>
-            <a class="nav-link" href="#">Start Up</a>
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" aria-current="page" href="#Home">Home</a>
+            <a class="nav-link" href="#Center">Center</a>
+            <a class="nav-link" href="#Team">The Team</a>
+            <a class="nav-link" href="#Service">Services</a>
+            <a class="nav-link" href="#Contact">Contact Us</a>
+            <a class="nav-link" href="#Annoucement">Annoucement</a>
+            <a class="nav-link" href="#About">About Us</a>
           </div>
         </div>
       </div>
     </nav>
-    <section class="video-section">
+    <section id="Home" class="video-section d-none d-md-block">
       <video class="video-background" autoplay muted loop>
         <source src="img/Test.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -73,11 +76,30 @@
             advocacy and technology adoption across the continent of Africa.
           </p>
           <br />
-          <a href="#Center" class="btn-dark btn">Learn More</a>
+          <a href="#" class="btn-dark btn">Learn More</a>
         </div>
-        <div></div>
       </div>
     </section>
+    <div id="Home" class="d-block d-md-none MM">
+      <div class="main">
+        <div class="content">
+          <h1>Hub For Digital Excellence</h1>
+          <b class="fs-1">'Advancing Digital Excellence in Africa'</b>
+          <br />
+
+          <br />
+          <p>
+            The purpose of the organization is to advance digital excelence in
+            Africa through the collaboration and engagement of the global
+            African diaspora. This includes but is not limited to promoting
+            education, research, enterpreneurship, funding support, policy
+            advocacy and technology adoption across the continent of Africa.
+          </p>
+          <br />
+          <a href="#" class="btn-dark btn">Learn More</a>
+        </div>
+      </div>
+    </div>
 
     <!-- What we do -->
     <main class="pt-4 p-2" id="Center">
@@ -103,7 +125,7 @@
                 Empowering individuals with cutting-edge skills for the digital
                 age.
               </p>
-              <div class="text-center"><button class="btn-dark btn">Learn More</button></div>
+              <div class="text-center"><a href="Center.html"><button class="btn-dark btn">Learn More</button></a></div>
             </div>
           </div>
         </div>
@@ -244,8 +266,8 @@
     </section>
     <!-- Our Goal -->
     <!-- Out Team -->
-    <div class="Team">
-      <section class="py-5">
+    <div id="Team" class="Team">
+      <section class="py-5 d-none d-md-block">
         <div class="container">
           <h1 class="text-center mb-5 text-custom-green">Meet The Team</h1>
           <div class="row d-flex justify-content-md-between g-4">
@@ -293,7 +315,7 @@
           </div>
         </div>
       </section>
-      <section class="py-5">
+      <section class="py-5 d-none d-md-block">
         <div class="container">
           <h1 class="text-center mb-5 text-custom-green">Meet The Interns</h1>
           <div class="row  d-flex justify-content-md-center flex-wrap  g-4">
@@ -373,10 +395,97 @@
           </div>
         </div>
       </section>
+      <div class="container mobile-slider d-block d-md-none py-5">
+        <h2 class="text-custom-green text-center" >Meet The Team</h2>
+        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="team-members">
+                <img src="img/Ceo 1.jpg" alt="Funmilayo Ogunnowo">
+                <h3>Funmilayo Ogunnowo</h3>
+                <p>President</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="team-members">
+                <img src="img/Ceo 2.jpg" alt="Dr. Tommy Francis">
+                <h3>Dr. Tommy Francis</h3>
+                <p>Co-Founder/Head Of Faculty</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="team-members">
+                <img src="img/jv.jpg" alt="John Adekutsi">
+                <h3>John Adekunjo</h3>
+                <p>Head of Digital Communications</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="container mobile-slider d-block d-md-none py-5">
+        <h2 class="text-center text-custom-green">Meet The Interns</h2>
+        <div id="teamCarousels" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="team-members">
+                <img src="img/Piyush.jpg" alt="Funmilayo Ogunnowo">
+                <h3>Piyush Maan</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="team-members">
+                <img src="img/Evans.jpg" alt="Dr. Tommy Francis">
+                <h3>Kayode Tomiwa David</h3>
+                <p>Graphic Designer</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="team-members">
+                <img src="img/mee.jpg" alt="John Adekutsi">
+                <h3>Monehin John</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="team-members">
+                <img src="img/Favour.jpg" alt="John Adekutsi">
+                <h3>Abidoye Oladejo Favour</h3>
+                <p>Social Media Manager</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="team-members">
+                <img src="img/Evans.png"  alt="John Adekutsi">
+                <h3>Evans Moitui Makori</h3>
+                <p>Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousels" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#teamCarousels" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
     </div>
-    <!-- Out Team -->
+    <!-- Our Team -->
      <!-- Our Services -->
-      <div class="services J">
+      <div id="Service" class="services J">
         <section class="py-5">
           <h1 class="text-center mb-5 text-custom-green">Our Services</h1>
           <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4 p-5">
@@ -462,75 +571,101 @@ We connect talented tech professionals with companies offering remote work oppor
     <!-- About -->
     <!-- Why Build -->
     <!-- Test -->
-    <div class=" T">
-      <div class="video-sec">
-        <video autoplay loop muted class="video-back">
-          <source src="img/optimum.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="text-overlay">
-          <div class="container py-5">
-            <div class="row justify-content-between p-5">
-                <div class="col-md-10">
-                    <div class="contact-form row no-gutters">
-                        <div class="col-md-4 contact-info p-4">
-                            <h2 class="mb-4">Contact Us</h2>
-                            <div class="mb-3">
-                                <i class="bi bi-geo-alt"></i>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z"/></svg>
-                                <b>First Floor F1, The City Mall Onikan, Onikan, Lagos.</b>
-
+    <section id="Contact">
+      <div class="T d-none d-md-block">
+        <div class="video-sec">
+          <video autoplay loop muted class="video-back">
+            <source src="img/optimum.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="text-overlay">
+            <div class="container py-5">
+              <div class="row justify-content-between p-5">
+                  <div class="col-md-10">
+                      <div class="contact-form row no-gutters">
+                          <div class="col-md-4 contact-info p-4">
+                              <h2 class="mb-4">Contact Us</h2>
+                              <div class="mb-3">
+                                  <i class="bi bi-geo-alt"></i>
+                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z"/></svg>
+                                  <b>First Floor F1, The City Mall Onikan, Onikan, Lagos.</b>
+                                </div>
+                                <div class="text-wrap">
+                                    <i class="bi bi-envelope"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill=" rgb(255, 200, 0)"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                                    <b>admin@hubfordigitalexcellence <br> .com</b>
+                                </div>
+                              <div class="mb-3">
+                                  <i class="bi bi-telephone"></i>
+                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                                  <b>+2348143838441</b><br>
+                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                                  <b>+1 (202) 500-3323</b>
                               </div>
-                              <div class="text-wrap">
-                                  <i class="bi bi-envelope"></i>
-                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill=" rgb(255, 200, 0)"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-                                  <b>admin@hubfordigitalexcellence <br> .com</b>
-                              </div>
-                            <div class="mb-3">
-                                <i class="bi bi-telephone"></i>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-                                <b>+2348143838441</b><br>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-                                <b>+1 (202) 500-3323</b>
-                            </div>
-                        </div>
-                        <div class="col-md-8 p-4">
-                            <form id="contactForm">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Contact Number</label>
-                                    <input type="tel" class="form-control" id="Tel" required>
-                                </div>
-                                <!-- <div class="mb-3">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" required>
-                                </div> -->
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="4" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                          </div>
+                          <div class="col-md-8 p-4">
+                              <form id="contactForm">
+                                  <div class="mb-3">
+                                      <label for="name" class="form-label">Name</label>
+                                      <input type="text" class="form-control" id="name" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="email" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="email" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="email" class="form-label">Contact Number</label>
+                                      <input type="tel" class="form-control" id="Tel" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="message" class="form-label">Message</label>
+                                      <textarea class="form-control" id="message" rows="4" required></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Send Message</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+                      </div>
+          </div>
+        </div>
+        <div class="contact-section d-block d-md-none">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 contact-form contact-info">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> First Floor F1, The City Mall Onikan, Onikan, Lagos.</p>
+                <p><i class="fas fa-envelope"></i> admin@hubfordigitalexcellence.com</p>
+                <p><i class="fas fa-phone"></i> +2348143839441</p>
+                <p><i class="fas fa-phone"></i> +1 (202) 500-3323</p>
+              </div>
+              <div class="col-md-6">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Contact Number">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-success">Send Message</button>
+                </form>
+              </div>
             </div>
-        </div>
-    
-                    </div>
-        </div>
-      </div>
+          </div>
+    </section>
       <!-- Test -->
     </div>
     <!-- Blog -->
-    <div class="container py-5">
+    <div id="Annoucement" class="container py-5">
       <h1 class="text-center mb-5">Annoucement</h1>
       <div class="row">
           <div class="col-md-4 mb-4 p-2">
@@ -573,7 +708,7 @@ We connect talented tech professionals with companies offering remote work oppor
     <!-- Blog -->
    
     <!-- Footer -->
-    <footer class="d-flex justify-content-between align-items-center">
+    <footer id="About" class="d-flex justify-content-between align-items-center">
       <div>
         <img src="img/Hub.png" alt="" />
         <p>

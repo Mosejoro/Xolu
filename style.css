@@ -70,6 +70,14 @@ main h1 {
 main {
   background-color: rgb(35, 161, 54);
 }
+.MM {
+  background-image: url(img/mobile\ meeting.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000b9;
+  mix-blend-mode: multiply;
+}
 .card {
   background-color: transparent;
 }
@@ -355,6 +363,80 @@ footer div {
   }
 }
 /* FOrm */
+/* Mobile form */
+.contact-section {
+  background-image: url("img/Opi.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  position: relative;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 128, 0, 0.7); /* Green overlay */
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-info {
+  color: white;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+/* Mobile form */
+/* Mobile Slider */
+.mobile-slider {
+  display: block;
+}
+.desktop-view {
+  display: none;
+}
+.carousel-item {
+  text-align: center;
+}
+.team-members img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Mobile Slider */
 /* Blog */
 .blog-card {
   border: 1px solid #dee2e6;
