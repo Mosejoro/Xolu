@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEET Academy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/hhuubb.png" />
+
+    <!-- Poppins -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h1 {
+        font-family: roboto;
+      }
+      body {
+        font-family: Space Grotesk;
+      }
+      header,
+      nav,
+      footer {
+        background-color: rgb(35, 161, 54);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      nav img,
+      footer img {
+        width: 7rem;
+      }
+      .nav-link {
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      :root {
+        --primary-color: rgb(255, 200, 0);
+        --secondary-color: rgb(35, 161, 54);
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+      }
+      .navbar-placeholder {
+        height: 56px;
+        background-color: var(--primary-color);
+      }
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        padding: 100px 0;
+      }
+      .section-title {
+        color: var(--secondary-color);
+        border-bottom: 3px solid var(--primary-color);
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      .card {
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .btn-primary {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+      .btn-primary:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      #applyBtn {
+        background-color: var(--primary-color);
+        color: black;
+        font-weight: bold;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        transition: all 0.3s;
+      }
+      #applyBtn:hover {
+        background-color: var(--secondary-color);
+        color: white;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar-placeholder">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/Hub.png" alt="" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto text-center">
+              <a class="nav-link" aria-current="page" href="#Home">Home</a>
+              <a class="nav-link" href="#Center">Center</a>
+              <a class="nav-link" href="#Team">The Team</a>
+              <a class="nav-link" href="#Service">Services</a>
+              <a class="nav-link" href="#Contact">Contact Us</a>
+              <a class="nav-link" href="#Annoucement">Annoucement</a>
+              <a class="nav-link" href="#About">About Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <header class="hero text-center">
+      <div class="container">
+        <h1 class="display-4">Welcome to DEET Academy</h1>
+        <p class="lead">Empowering the next generation of digital experts</p>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section id="about" class="mb-5">
+        <h2 class="section-title mb-4">About DEET Academy</h2>
+        <p>
+          DEET Academy is a groundbreaking initiative by the Hub for Digital
+          Excellence designed to transform the way individuals learn and engage
+          with the digital world. Our mission is to empower students,
+          professionals, and entrepreneurs with the skills they need to thrive
+          in the modern tech-driven marketplace.
+        </p>
+      </section>
+
+      <section id="why-choose" class="mb-5">
+        <h2 class="section-title mb-4">Why Choose DEET Academy?</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Integrated Learning</h5>
+                <p class="card-text">
+                  Combines online learning with remote job opportunities for a
+                  seamless educational experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Learn-to-Earn Program</h5>
+                <p class="card-text">
+                  Transition smoothly from education to employment with our
+                  unique program and job placement partners.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Industry-Relevant Skills</h5>
+                <p class="card-text">
+                  Gain practical skills that are in high demand in the digital
+                  and tech industries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="mb-5">
+        <h2 class="section-title mb-4">Our Courses</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/Photo.jpg"
+                class="card-img-top"
+                style="max-height: 12rem"
+                alt="Graphics Design"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Graphics Design</h5>
+                <p class="card-text">
+                  Learn the art of visual storytelling and create stunning
+                  designs for brands, websites, and marketing campaigns.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/web dev.jpg"
+                class="card-img-top"
+                alt="Web Development"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">
+                  Dive into the world of web technologies and learn how to build
+                  responsive, user-friendly websites from scratch.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/Digital Market.jpg"
+                class="card-img-top"
+                alt="Digital Marketing"
+                style="max-height: 13rem"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Digital Marketing</h5>
+                <p class="card-text">
+                  Understand how to drive online engagement and conversions
+                  through SEO, email marketing, content marketing, and paid ads.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/Video Edit.jpg"
+                class="card-img-top"
+                alt="Graphics Design"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Video Editing</h5>
+                <p class="card-text">
+                  Master the tools and techniques used by professional video
+                  editors to bring ideas to life through compelling video
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/Social.jpg"
+                class="card-img-top"
+                alt="Web Development"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Social Media Management</h5>
+                <p class="card-text">
+                  Explore the strategies behind successful social media
+                  campaigns and learn how to manage brand presence across
+                  platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/Uiux.jpg"
+                class="card-img-top"
+                alt="Digital Marketing"
+              />
+              <div class="card-body">
+                <h5 class="card-title">UI/UX Design</h5>
+                <p class="card-text">
+                  Design intuitive and engaging user interfaces and experiences
+                  that drive user satisfaction and brand success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="mb-5">
+        <h2 class="section-title mb-4">Key Features</h2>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h5>
+              <i class="fas fa-project-diagram"></i> Project-Based Learning
+            </h5>
+            <p>
+              Work on real-world projects that challenge you to apply what
+              you've learned and solve practical problems.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h5><i class="fas fa-laptop-code"></i> Capstone Projects</h5>
+            <p>
+              Complete a final project that simulates the challenges faced in
+              your chosen field.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h5><i class="fas fa-video"></i> Live Streaming & Video Uploads</h5>
+            <p>
+              Learn at your own pace with access to recorded lessons or attend
+              live sessions.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h5>
+              <i class="fas fa-briefcase"></i> Job Placement Opportunities
+            </h5>
+            <p>
+              Connect directly with potential employers through our
+              Learn-to-Earn program.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="text-center">
+        <h2 class="section-title mb-4">Enroll Today!</h2>
+        <p>
+          Take control of your future with DEET Academy. Start your journey
+          toward digital excellence now.
+        </p>
+        <a href="https://forms.gle/jqfgkMeeyqyoZmJaA"
+          ><button id="applyBtn" class="btn btn-lg mt-3">APPLY HERE</button></a
+        >
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>&copy; 2024 DEET Academy. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+
+        // Add animation to cards on scroll
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add(
+                "animate__animated",
+                "animate__fadeInUp"
+              );
+            }
+          });
+        });
+
+        document.querySelectorAll(".card").forEach((card) => {
+          observer.observe(card);
+        });
+      });
+    </script>
+  </body>
+</html>
