@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT as a Service (ITaaS) - Hub for Digital Excellence</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/hhuubb.png" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h1 {
+        font-family: roboto;
+      }
+      body {
+        font-family: Space Grotesk;
+      }
+      header,
+      nav,
+      footer {
+        background-color: rgb(35, 161, 54);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      nav img,
+      footer img {
+        width: 7rem;
+      }
+      header ul {
+        display: flex;
+        padding: 20px;
+        gap: 1rem;
+      }
+      .nav-link {
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      :root {
+        --primary-color: rgb(255, 200, 0);
+        --secondary-color: rgb(35, 161, 54);
+      }
+      body {
+        line-height: 1.6;
+      }
+      .navbar-placeholder {
+        height: 56px;
+        background-color: var(--primary-color);
+      }
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        padding: 100px 0;
+      }
+      .section-title {
+        color: var(--secondary-color);
+        border-bottom: 3px solid var(--primary-color);
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      .feature-icon {
+        font-size: 2rem;
+        color: var(--primary-color);
+      }
+      .service-card {
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .service-icon {
+        font-size: 3rem;
+        color: var(--secondary-color);
+      }
+      .process-step {
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 30px;
+      }
+      .process-step:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+      }
+      .process-step:after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 30px;
+        width: 2px;
+        height: 100px;
+        background-color: var(--primary-color);
+      }
+      @media only screen and (max-width: 600px) {
+        .process-step:after {
+          min-height: 200px;
+        }
+      }
+      .process-step:last-child:after {
+        display: none;
+      }
+      #contactBtn {
+        background-color: var(--primary-color);
+        color: black;
+        font-weight: bold;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        transition: all 0.3s;
+      }
+      #contactBtn:hover {
+        background-color: var(--secondary-color);
+        color: white;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/Hub.png" alt="" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto text-center">
+            <a class="nav-link" aria-current="page" href="#Home">Home</a>
+            <a class="nav-link" href="#Center">Center</a>
+            <a class="nav-link" href="#Team">The Team</a>
+            <a class="nav-link" href="#Service">Services</a>
+            <a class="nav-link" href="#Contact">Contact Us</a>
+            <a class="nav-link" href="#Annoucement">Annoucement</a>
+            <a class="nav-link" href="#About">About Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero text-center">
+      <div class="container">
+        <h1 class="display-4">IT as a Service (ITaaS)</h1>
+        <p class="lead">
+          Empowering your digital transformation journey with top-tier, scalable
+          IT solutions
+        </p>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section id="about" class="mb-5">
+        <h2 class="section-title mb-4">About Our ITaaS</h2>
+        <p>
+          At the Hub for Digital Excellence, we are dedicated to providing
+          top-tier, scalable, and reliable IT services designed to support
+          businesses at every stage of their digital transformation journey. Our
+          IT as a Service (ITaaS) model is tailored to help startups, SMEs, and
+          large enterprises optimize their operations with cutting-edge
+          technology solutions.
+        </p>
+        <p>
+          By outsourcing your IT needs to us, you can focus on growing your
+          business while we handle the complexities of web development and
+          graphic design. Our team of experienced professionals is here to
+          ensure that your digital assets are built to the highest standards and
+          can adapt to the ever-changing demands of the modern business
+          environment.
+        </p>
+      </section>
+
+      <section id="services" class="mb-5">
+        <h2 class="section-title mb-4">Our ITaaS Offering</h2>
+        <p>
+          We currently specialize in providing two essential services for
+          businesses looking to scale their online presence and digital
+          capabilities:
+        </p>
+        <div class="row mt-4">
+          <div class="col-md-6 mb-4">
+            <div class="service-card h-100 p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-code service-icon me-3"></i>
+                <h3>Web Development</h3>
+              </div>
+              <p>
+                Our web development services are designed to help you build
+                responsive, user-friendly, and high-performing websites that
+                align with your business goals.
+              </p>
+              <h5>Key Features:</h5>
+              <ul>
+                <li>Custom website design tailored to your brand's identity</li>
+                <li>
+                  Development of e-commerce platforms, business websites, and
+                  web applications
+                </li>
+                <li>
+                  Mobile responsiveness for optimal performance across all
+                  devices
+                </li>
+                <li>
+                  Integration of modern technologies such as Content Management
+                  Systems (CMS), APIs, and third-party plugins
+                </li>
+                <li>Website security protocols and performance optimization</li>
+                <li>SEO best practices to boost visibility and engagement</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="service-card h-100 p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-paint-brush service-icon me-3"></i>
+                <h3>Graphic Design</h3>
+              </div>
+              <p>
+                Visual communication is crucial for any business, and our
+                graphic design services are here to help you stand out in a
+                crowded marketplace.
+              </p>
+              <h5>Key Features:</h5>
+              <ul>
+                <li>Custom logo and branding designs</li>
+                <li>
+                  Marketing materials such as brochures, banners, and flyers
+                </li>
+                <li>Social media graphics and visual content</li>
+                <li>
+                  User Interface (UI) and User Experience (UX) design for
+                  websites and applications
+                </li>
+                <li>Product packaging design and promotional materials</li>
+                <li>
+                  Creative, strategic designs that align with your business
+                  objectives
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-choose" class="mb-5">
+        <h2 class="section-title mb-4">Why Choose ITaaS from the Hub?</h2>
+        <p>
+          When you partner with us for ITaaS, you get more than just tech
+          solutions—you gain a strategic partner dedicated to your success. Our
+          IT as a Service model is built around the principles of flexibility,
+          scalability, and innovation, allowing you to:
+        </p>
+        <div class="row mt-4">
+          <div class="col-md-6 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-piggy-bank feature-icon me-2"></i>
+              <h5 class="mb-0">Save on IT Costs</h5>
+            </div>
+            <p>
+              Our subscription-based model ensures you receive high-quality IT
+              services without the overhead costs of hiring an in-house team.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-brain feature-icon me-2"></i>
+              <h5 class="mb-0">Access Expertise</h5>
+            </div>
+            <p>
+              Our team of experienced web developers and graphic designers is
+              skilled in the latest technologies and design trends.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-bullseye feature-icon me-2"></i>
+              <h5 class="mb-0">Focus on Your Core Business</h5>
+            </div>
+            <p>
+              With IT services managed by us, you can focus on business growth
+              and strategy, leaving the tech to the experts.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-chart-line feature-icon me-2"></i>
+              <h5 class="mb-0">Adapt and Scale</h5>
+            </div>
+            <p>
+              Whether you're a startup or an enterprise, our ITaaS solutions are
+              designed to grow with you, allowing you to scale your digital
+              capabilities as your business expands.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="mb-5">
+        <h2 class="section-title mb-4">How ITaaS Works</h2>
+        <div class="mt-4">
+          <div class="process-step">
+            <h5>Step 1: Consultation</h5>
+            <p>
+              We begin by understanding your business needs, challenges, and
+              goals. Our team will consult with you to determine the best IT
+              solutions that will deliver results and drive growth.
+            </p>
+          </div>
+          <div class="process-step">
+            <h5>Step 2: Tailored Solutions</h5>
+            <p>
+              Based on your specific requirements, we create a tailored IT
+              strategy, whether for web development, graphic design, or both. We
+              ensure that our solutions are designed to meet your objectives and
+              can scale as your business evolves.
+            </p>
+          </div>
+          <div class="process-step">
+            <h5>Step 3: Implementation & Support</h5>
+            <p>
+              Once the strategy is in place, our team gets to work. From
+              building your website to designing your marketing materials, we
+              handle everything from start to finish. Plus, we offer ongoing
+              support to ensure that your digital assets continue to perform
+              optimally.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="text-center">
+        <h2 class="section-title mb-4">
+          Ready to Elevate Your Business with ITaaS?
+        </h2>
+        <p>
+          At the Hub for Digital Excellence, we believe that digital
+          transformation is the key to business success in today's tech-driven
+          world. Whether you need a new website, a brand identity refresh, or
+          both, our ITaaS offering provides the resources, expertise, and
+          flexibility to take your business to the next level.
+        </p>
+        <button id="contactBtn" class="btn btn-lg mt-3">Contact Us</button>
+        <div
+          class="modal fade"
+          id="exampleModalToggle"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div
+              class="modal-content"
+              style="background-color: rgb(35, 161, 54)"
+            >
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel"></h1>
+                <button
+                  type="button"
+                  class="btn-close btn btn-lg mt-3"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="">
+                  <h2>Contact Us</h2>
+
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="rgb(255, 200, 0)"
+                    >
+                      <path
+                        d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z"
+                      />
+                    </svg>
+                    First Floor F1, The City Mall Onikan, Onikan, Lagos.
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill=" rgb(255, 200, 0)"
+                    >
+                      <path
+                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                      />
+                    </svg>
+                    admin@hubfordigitalexcellence.com
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="rgb(255, 200, 0)"
+                    >
+                      <path
+                        d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                      />
+                    </svg>
+                    +2348143839441
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="rgb(255, 200, 0)"
+                    >
+                      <path
+                        d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                      />
+                    </svg>
+                    +1 (202) 500-3323
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn btn-primary"
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  Send us a Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalToggle2"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div
+              class="modal-content"
+              style="background-color: rgb(35, 161, 54)"
+            >
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+                  Message
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label"
+                      >Recipient:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="recipient-name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"
+                      >Message:</label
+                    >
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Send message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="btn btn-lg mt-3"
+          data-bs-target="#exampleModalToggle"
+          data-bs-toggle="modal"
+          id="contactBtn"
+        >
+          Open first modal
+        </button>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>&copy; 2024 Hub for Digital Excellence. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+
+        // Add animation to sections on scroll
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add(
+                "animate__animated",
+                "animate__fadeInUp"
+              );
+            }
+          });
+        });
+
+        document.querySelectorAll("section").forEach((section) => {
+          observer.observe(section);
+        });
+      });
+    </script>
+  </body>
+</html>
