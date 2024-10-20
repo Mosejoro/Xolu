@@ -31,6 +31,7 @@
     <title>Hub</title>
   </head>
   <body>
+    <div id="preloader"></div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="img/Hub.png" alt="" /></a>
@@ -48,7 +49,42 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto text-center">
             <a class="nav-link" aria-current="page" href="#Home">Home</a>
-            <a class="nav-link" href="#Center">Center</a>
+            <div class="nav-item dropdown text-center ">
+              <a
+                class="nav-link dropdown-toggle "
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Center
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="Research.html"
+                    >Research and Innovation</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Learning.html">
+                    Learning and Development</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item " href="Entrepreneur.html"
+                    >Entrepreneurship</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Events.html">Events</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="index.html#Center">Center</a>
+                </li>
+              </ul>
+            </div>
             <a class="nav-link" href="#Team">The Team</a>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,7 +106,7 @@
         </div>
       </div>
     </nav>
-    <section id="Home" class="video-section d-none d-md-block">
+    <section id="Home" class="video-section  d-md-block">
       <video class="video-background" autoplay muted loop>
         <source src="img/Test.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -94,27 +130,6 @@
         </div>
       </div>
     </section>
-    <div id="Home" class="d-block d-md-none MM">
-      <div class="main">
-        <div class="content">
-          <h1>Hub For Digital Excellence</h1>
-          <b class="fs-1">'Advancing Digital Excellence in Africa'</b>
-          <br />
-
-          <br />
-          <p>
-            The purpose of the organization is to advance digital excelence in
-            Africa through the collaboration and engagement of the global
-            African diaspora. This includes but is not limited to promoting
-            education, research, enterpreneurship, funding support, policy
-            advocacy and technology adoption across the continent of Africa.
-          </p>
-          <br />
-          <a href="#" class="btn-dark btn">Learn More</a>
-        </div>
-      </div>
-    </div>
-
     <!-- What we do -->
     <main class="pt-4 p-2" id="Center">
       <h1>Our Centers</h1>
@@ -139,7 +154,7 @@
                 Empowering individuals with cutting-edge skills for the digital
                 age.
               </p>
-              <div class="text-center"><a href="Center.html"><button class="btn-dark btn">Learn More</button></a></div>
+              <div class="text-center"><a href="Learning.html"><button class="btn-dark btn">Learn More</button></a></div>
             </div>
           </div>
         </div>
@@ -154,7 +169,7 @@
                 Nurturing visionaries and supporting the growth of innovative
                 businesses.
               </p>
-              <div class="text-center"><a href="Center.html"><button class="btn-dark btn">Learn More</button></a></div>
+              <div class="text-center"><a href="Entrepreneur.html"><button class="btn-dark btn">Learn More</button></a></div>
 
             </div>
           </div>
@@ -170,7 +185,7 @@
                 Connecting minds through world-class conferences, webinars, and
                 exhibitions.
               </p>
-              <div class="text-center"><a href="Center.html"><button class="btn-dark btn">Learn More</button></a></div>
+              <div class="text-center"><a href="Events.html"><button class="btn-dark btn">Learn More</button></a></div>
 
             </div>
           </div>
@@ -186,7 +201,7 @@
                 Driving progress through groundbreaking research and
                 technological advancements.
               </p>
-              <div class="text-center"><a href="Center.html"><button class="btn-dark btn">Learn More</button></a></div>
+              <div class="text-center"><a href="Research.html"><button class="btn-dark btn">Learn More</button></a></div>
 
             </div>
           </div>
@@ -569,6 +584,64 @@ We connect talented tech professionals with companies offering remote work oppor
           </div>
       </div>
      <!-- Our Services -->
+      <!-- Media -->
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Media Publication</h2>
+        
+        <div id="articleCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card article-card">
+                        <img src="img/read.jpg" class="card-img-top " style="max-height: 30rem;" alt="The Sun Article">
+                        <div class="card-body">
+                            <h5 class="card-title">HFDE Empowers Africa's Digital Transformation</h5>
+                            <div class="article-content">
+                                <p class="card-text">The Hub for Digital Excellence (HFDE) has reaffirmed its commitment to empowering individuals and businesses in harnessing digital technologies to transform Africa's economy. Through strategic initiatives, innovative education, and capacity-building programs, HFDE is laying the groundwork for Africa's digital transformation.</p>
+                                <p>CEO Becky Ogunsanmi highlighted HFDE's four core centers:</p>
+                                <ul>
+                                    <li>Center for Learning and Development</li>
+                                    <li>Center for Entrepreneurship</li>
+                                    <li>Center for Research and Innovation</li>
+                                    <li>Center for Networking and Events</li>
+                                </ul>
+                                <p>These centers focus on bridging educational gaps, fostering innovation among startups, conducting cutting-edge research, and facilitating collaboration within the tech industry.</p>
+                            </div>
+                            <a href="https://www.thesun.co.uk" class="btn btn-read-more mt-3" target="_blank">Read More on The Sun</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card article-card">
+                        <img src="img/read.jpg" style="max-height: 30rem;" class="card-img-top img-fluid" alt="Vanguard Article">
+                        <div class="card-body">
+                            <h5 class="card-title">HFDE: Driving Africa's Digital Economy</h5>
+                            <div class="article-content">
+                                <p class="card-text">The Hub for Digital Excellence (HFDE) has underscored its efforts to empower individuals and businesses in harnessing digital technologies and transforming Africa's economy. In a recent statement, the firm highlighted its four core centers and the impactful work done across Africa's digital landscape.</p>
+                                <p>CEO Becky Ogunsanmi detailed the four centers:</p>
+                                <ol>
+                                    <li>Center for Learning and Development: Bridges the gap between traditional education and the evolving digital job market.</li>
+                                    <li>Center for Entrepreneurship: Fosters innovation among Africa's startups and small businesses.</li>
+                                    <li>Center for Research and Innovation: Identifies and nurtures ideas shaping the continent's future.</li>
+                                    <li>Center for Networking and Events: Brings together key stakeholders from across the tech industry.</li>
+                                </ol>
+                                <p>Ogunsanmi emphasized that HFDE is more than just a technology hub – it's a catalyst for change, driving Africa's digital transformation one initiative at a time.</p>
+                            </div>
+                            <a href="https://www.vanguardngr.com" class="btn btn-read-more mt-3" target="_blank">Read More on Vanguard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+      <!-- Media -->
       <!-- Our Partners -->
        <div id="Partners">
         <section class="partner-section">
@@ -618,8 +691,8 @@ We connect talented tech professionals with companies offering remote work oppor
                                   <i class="bi bi-telephone"></i>
                                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
                                   <b>+2348143838441</b><br>
-                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-                                  <b>+1 (202) 500-3323</b>
+                                  <!-- <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> -->
+                                  <!-- <b>+1 (202) 500-3323</b> -->
                               </div>
                           </div>
                           <div class="col-md-8 p-4">
@@ -663,8 +736,8 @@ We connect talented tech professionals with companies offering remote work oppor
                   <i class="fas fa-envelope"></i> admin@hubfordigitalexcellence.com</p>
                 <p>                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
  +2348143839441</p>
-                <p>                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
- +1 (202) 500-3323</p>
+                <!-- <p>                                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 200, 0)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+ +1 (202) 500-3323</p> -->
               </div>
               <div class="col-md-6">
                 <form>
@@ -732,8 +805,8 @@ We connect talented tech professionals with companies offering remote work oppor
     <!-- Blog -->
    
     <!-- Footer -->
-    <footer id="About" class="d-flex justify-content-center justify-content-md-between align-items-center">
-      <div>
+    <footer id="About" class="d-md-flex p-md-2 align-items-center justify-content-around">
+      <div class="w-50">
         <img src="img/Hub.png" alt="" />
         <p>
           We empower individuals to thrive in the digital economy by bridging education and employment. Our goal is to create a global platform where learning resources and job opportunities converge, enabling success in the rapidly evolving digital landscape.
@@ -759,5 +832,13 @@ We connect talented tech professionals with companies offering remote work oppor
       crossorigin="anonymous"
     ></script>
     <script src="script.js "></script>
+
+
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>

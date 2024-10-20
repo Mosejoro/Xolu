@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center for Learning and Development</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/hhuubb.png" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h1 {
+        font-family: roboto;
+      }
+      body {
+        font-family: Space Grotesk;
+      }
+      header,
+      nav,
+      footer {
+        background-color: rgb(35, 161, 54);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      nav img,
+      footer img {
+        width: 7rem;
+      }
+      header ul {
+        display: flex;
+        padding: 20px;
+        gap: 1rem;
+      }
+      .nav-link {
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      :root {
+        --primary-color: rgb(255, 200, 0);
+        --secondary-color: rgb(35, 161, 54);
+      }
+      body {
+        line-height: 1.6;
+      }
+      .navbar-placeholder {
+        height: 56px;
+        background-color: var(--primary-color);
+      }
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        padding: 100px 0;
+      }
+      .center-section {
+        padding: 4rem 0;
+      }
+      .feature-card {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Hub.png" alt="Hub Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto text-center">
+            <a class="nav-link" href="index.html#Home">Home</a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Center
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item " href="Research.html"
+                    >Research and Innovation</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="Learning.html">
+                    Learning and Development</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Entrepreneur.html"
+                    >Entrepreneurship</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Events.html">Events</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="index.html#Center">Center</a>
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link" href="index.html#Team">The Team</a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Service
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Itaas.html">ITaaS</a></li>
+                <li>
+                  <a class="dropdown-item" href="Start.html"
+                    >Call for Start Up</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Remote.html"
+                    >Remote Tech Jobs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Deet.html">Learn To Earn</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="index.html#Service"
+                    >Our Services</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link" href="index.html#Contact">Contact Us</a>
+            <a class="nav-link" href="index.html#Annoucement">Announcement</a>
+            <a class="nav-link" href="index.html#About">About Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0" role="main">
+      <section
+        id="intro"
+        class="section text-center mb-5 animate__animated animate__fadeIn hero"
+      >
+        <div class="container">
+          <h1 class="display-4 fw-bold">Center for Learning and Development</h1>
+          <p class="lead">
+            Empowering individuals with cutting-edge skills and knowledge.
+          </p>
+        </div>
+      </section>
+
+      <div class="container">
+        <section
+          id="center-for-learning-and-development"
+          class="section center-section animate__animated animate__fadeInLeft"
+        >
+          <div class="section-content mt-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="feature-card">
+                  <div class="text-center">
+                    <img
+                      src="img/hubLe.jpg"
+                      alt="Learning"
+                      class="rounded mb-3 img-fluid"
+                      style="max-height: 32rem; width: 100%"
+                    />
+                  </div>
+                  <h3>Learning</h3>
+                  <p>
+                    At the Center for Learning and Development, we emphasize
+                    hands-on learning as a core principle. Our programs,
+                    including Project Management, Data Science, and Blockchain
+                    Product Management, are designed to engage learners in
+                    practical assignments, projects, and real-world scenarios,
+                    ensuring they can apply theoretical knowledge in meaningful
+                    ways.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-card">
+                  <div class="text-center">
+                    <img
+                      src="img/Connection.jpg"
+                      alt="Connection to Jobs"
+                      class="rounded mb-3 img-fluid"
+                      style="max-height: 24rem; width: 100%"
+                    />
+                  </div>
+                  <h3>Connection to Jobs</h3>
+                  <p>
+                    We understand the importance of job readiness, which is why
+                    our Center focuses on equipping learners with practical
+                    skills and knowledge that align with industry standards.
+                    Courses like Information Security and Cybersecurity are
+                    designed to meet the specific demands of the job market.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="feature-card">
+                  <div class="text-center">
+                    <img
+                      src="img/Upskilling.jpg"
+                      alt="Upskilling"
+                      class="rounded mb-3 img-fluid"
+                      style="max-height: 23rem; width: 100%"
+                    />
+                  </div>
+                  <h3>Upskilling</h3>
+                  <p>
+                    Continuous learning is essential in today's ever-evolving
+                    job market, and our upskilling initiatives are designed with
+                    continuous improvement in mind. We regularly update our
+                    course content to keep pace with industry trends and
+                    technological advancements, ensuring that our learners are
+                    always at the forefront of their fields.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-card">
+                  <div class="text-center">
+                    <img
+                      src="img/Empowermeent.jpg"
+                      alt="Empowerment"
+                      class="rounded mb-3 img-fluid"
+                      style="max-height: 32rem; width: 100%"
+                    />
+                  </div>
+                  <h3>Empowerment</h3>
+                  <p>
+                    We believe in providing accessible education that meets the
+                    diverse needs of our learners. Our programs are designed to
+                    be both affordable and flexible, accommodating different
+                    learning styles and schedules. Through personalized
+                    mentorship, interactive workshops, and collaborative
+                    projects, we empower individuals to reach their full
+                    potential.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="bg-light text-center py-3 mt-5">
+      <p>&copy; 2024 Hub for Digital Excellence. All rights reserved.</p>
+    </footer>
+
+</html>
