@@ -572,3 +572,29 @@ footer div {
     mix-blend-mode: multiply;
   }
 }
+/* social */
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+.bi-facebook {
+  color: #1877f2;
+}
+.bi-twitter {
+  color: #1da1f2;
+}
+.bi-instagram {
+  color: #e4405f;
+}
+.bi-linkedin {
+  color: #0a66c2;
+}
+.bi-youtube {
+  color: #ff0000;
+}
+/* social */
