@@ -8,11 +8,19 @@
 html {
   scroll-behavior: smooth;
 }
+@font-face {
+  font-family: roboto;
+  src: url(img/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(img/Poppins-Light.ttf);
+}
 h1 {
   font-family: roboto;
 }
 body {
-  font-family: Space Grotesk;
+  font-family: poppins;
 }
 /* Scroll */
 
@@ -31,16 +39,17 @@ body {
   background-color: rgb(35, 161, 54);
 }
 /* Scroll */
+
 header,
 nav {
-  background-color: rgb(255, 200, 0);
+  background-color: rgba(35, 161, 54, 0.479);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 nav img,
 footer img {
-  width: 7rem;
+  width: 4rem;
 }
 header ul {
   display: flex;
@@ -49,7 +58,7 @@ header ul {
 }
 .nav-link {
   color: white;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 400;
 }
 .video-section {
@@ -179,7 +188,7 @@ h1 {
   margin-bottom: 0.5em;
 }
 p {
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 .R {
   background-color: rgba(35, 161, 54, 0.507);
