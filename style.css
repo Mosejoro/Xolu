@@ -41,12 +41,20 @@ body {
 /* Scroll */
 
 header,
-nav {
+nav,
+.F {
   background-color: rgba(35, 161, 54, 0.479);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 1440px) {
+  .TL {
+    min-height: 540px;
+    max-height: 540px;
+  }
+}
+
 nav img,
 footer img {
   width: 4rem;
