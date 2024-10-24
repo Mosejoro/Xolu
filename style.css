@@ -22,14 +22,8 @@ h1 {
 body {
   font-family: poppins;
 }
-
-header,
-nav,
-.F {
-  background-color: lime;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navbar {
+  background-color: rgb(35, 161, 54);
 }
 @media (min-width: 1440px) {
   .TL {
@@ -72,7 +66,6 @@ header ul {
   top: 50%;
   left: 50%;
   min-width: 100%;
-  max-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
