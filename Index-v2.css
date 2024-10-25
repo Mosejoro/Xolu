@@ -23,10 +23,16 @@ h1 {
 body {
   font-family: poppins;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
 .navbar {
-  background-color: rgb(255, 200, 0);
+  background-color: rgb(100, 130, 60);
 }
 @media (min-width: 1240px) {
+  .T {
+    width: 50%;
+  }
   .TL {
     min-height: 520px;
     max-height: 520px;
@@ -46,9 +52,24 @@ body {
   }
 }
 
-nav img,
-footer img {
+nav img {
   width: 4rem;
+}
+footer {
+  background-color: rgb(17, 89, 40);
+  color: white;
+}
+footer img {
+  width: 7rem;
+}
+footer .FG li {
+  list-style: circle;
+  text-align: left;
+}
+.FG {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 header ul {
   display: flex;
@@ -57,8 +78,15 @@ header ul {
 }
 .nav-link {
   color: white;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 25px;
+  font-weight: 500;
+}
+footer .nav-link {
+  font-size: 20px;
+  font-weight: 800;
+}
+footer .dropdown-menu li {
+  list-style: none;
 }
 .video-section {
   position: relative;
@@ -206,13 +234,7 @@ p {
   background-color: rgba(35, 161, 0, 0.5);
   background-blend-mode: multiply;
 }
-footer {
-  background-color: rgba(35, 161, 54, 0.479);
-  /* padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; */
-}
+
 footer div {
   text-align: center;
   gap: 20px;
@@ -310,6 +332,7 @@ footer div {
 /* Goal */
 .J {
   background-color: rgb(255, 200, 0);
+  max-width: 100%;
 }
 .s {
   color: rgb(35, 161, 54);
@@ -537,6 +560,7 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 20px;
 }
 .example-2 .icon-content {
   margin: 0 10px;
