@@ -27,7 +27,7 @@ html::-webkit-scrollbar {
   display: none;
 }
 .navbar {
-  background-color: rgb(100, 130, 60);
+  background-color: rgb(35, 161, 54);
 }
 @media (min-width: 1240px) {
   .T {
@@ -53,7 +53,7 @@ html::-webkit-scrollbar {
 }
 
 nav img {
-  width: 4rem;
+  width: 7rem;
 }
 footer {
   background-color: rgb(17, 89, 40);
@@ -79,7 +79,7 @@ header ul {
 .nav-link {
   color: white;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
 }
 footer .nav-link {
   font-size: 20px;
